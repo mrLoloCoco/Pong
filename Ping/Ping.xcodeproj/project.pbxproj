@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5C7859FA1B4F33E900382C30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C7859F91B4F33E900382C30 /* main.cpp */; };
+		5CDCF57F1B4F3D2A005E4829 /* test_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF57E1B4F3D2A005E4829 /* test_state.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C7859F11B4F33E900382C30 /* Ping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7859F51B4F33E900382C30 /* Ping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ping-Info.plist"; sourceTree = "<group>"; };
 		5C7859F91B4F33E900382C30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5CDCF57C1B4F3ABB005E4829 /* game_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game_state.h; sourceTree = "<group>"; };
+		5CDCF57D1B4F3D11005E4829 /* test_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_state.h; sourceTree = "<group>"; };
+		5CDCF57E1B4F3D2A005E4829 /* test_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_state.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,9 @@
 		5C7859F31B4F33E900382C30 /* Ping */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF57D1B4F3D11005E4829 /* test_state.h */,
+				5CDCF57E1B4F3D2A005E4829 /* test_state.cpp */,
+				5CDCF57C1B4F3ABB005E4829 /* game_state.h */,
 				5C7859F91B4F33E900382C30 /* main.cpp */,
 				5C7859FB1B4F33E900382C30 /* Resources */,
 				5C7859F41B4F33E900382C30 /* Supporting Files */,
@@ -152,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C7859FA1B4F33E900382C30 /* main.cpp in Sources */,
+				5CDCF57F1B4F3D2A005E4829 /* test_state.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				5C785A081B4F33E900382C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
