@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5C7859FA1B4F33E900382C30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C7859F91B4F33E900382C30 /* main.cpp */; };
-		5CDCF57F1B4F3D2A005E4829 /* test_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF57E1B4F3D2A005E4829 /* test_state.cpp */; };
+		5CDCF57F1B4F3D2A005E4829 /* main_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */; };
+		5CDCF5851B4FD825005E4829 /* agata.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5841B4FD825005E4829 /* agata.regular.ttf */; };
+		5CDCF5881B4FD8D3005E4829 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,8 +18,11 @@
 		5C7859F51B4F33E900382C30 /* Ping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ping-Info.plist"; sourceTree = "<group>"; };
 		5C7859F91B4F33E900382C30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5CDCF57C1B4F3ABB005E4829 /* game_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game_state.h; sourceTree = "<group>"; };
-		5CDCF57D1B4F3D11005E4829 /* test_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_state.h; sourceTree = "<group>"; };
-		5CDCF57E1B4F3D2A005E4829 /* test_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_state.cpp; sourceTree = "<group>"; };
+		5CDCF57D1B4F3D11005E4829 /* main_menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main_menu.h; sourceTree = "<group>"; };
+		5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_menu.cpp; sourceTree = "<group>"; };
+		5CDCF5841B4FD825005E4829 /* agata.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = agata.regular.ttf; sourceTree = "<group>"; };
+		5CDCF5861B4FD8D3005E4829 /* ResourcePath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +55,10 @@
 		5C7859F31B4F33E900382C30 /* Ping */ = {
 			isa = PBXGroup;
 			children = (
-				5CDCF57D1B4F3D11005E4829 /* test_state.h */,
-				5CDCF57E1B4F3D2A005E4829 /* test_state.cpp */,
+				5CDCF5861B4FD8D3005E4829 /* ResourcePath.hpp */,
+				5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */,
+				5CDCF57D1B4F3D11005E4829 /* main_menu.h */,
+				5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */,
 				5CDCF57C1B4F3ABB005E4829 /* game_state.h */,
 				5C7859F91B4F33E900382C30 /* main.cpp */,
 				5C7859FB1B4F33E900382C30 /* Resources */,
@@ -71,6 +78,7 @@
 		5C7859FB1B4F33E900382C30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF5841B4FD825005E4829 /* agata.regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDCF5851B4FD825005E4829 /* agata.regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDCF5881B4FD8D3005E4829 /* ResourcePath.mm in Sources */,
 				5C7859FA1B4F33E900382C30 /* main.cpp in Sources */,
-				5CDCF57F1B4F3D2A005E4829 /* test_state.cpp in Sources */,
+				5CDCF57F1B4F3D2A005E4829 /* main_menu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

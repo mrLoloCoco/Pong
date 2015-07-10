@@ -9,6 +9,8 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include "ResourcePath.hpp"
+
 
 class tiny_state
 {

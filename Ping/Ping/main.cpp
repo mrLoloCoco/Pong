@@ -1,9 +1,10 @@
 #include "game_state.h"
-#include "test_state.h"
+#include "main_menu.h"
 
 game_state coreState;
 
 #include <iostream>
+#include "ResourcePath.hpp"
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
     
     
     coreState.SetWindow(&window);
-    coreState.SetState(new test_state());
+    coreState.SetState(new main_menu());
     
     // run the program as long as the window is open
     while (window.isOpen())
@@ -26,8 +27,12 @@ int main()
                 window.close();
         }
         
+        window.clear(sf::Color::Black);
+        
         coreState.Update();
         coreState.Render();
+        
+        window.display();
     }
     
     return 0;

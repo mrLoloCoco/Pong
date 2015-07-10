@@ -10,14 +10,17 @@
 
 #include "game_state.h"
 
-class test_state : public tiny_state
+class main_menu : public tiny_state
 {
 public:
     void Initiaize(sf::RenderWindow* window);
     void Update(sf::RenderWindow* window);
     void Render(sf::RenderWindow* window);
     void Destroy(sf::RenderWindow* window);
+    
+    ~main_menu();
 private:
-    bool paused;
+    sf::Font* font;
+    sf::Text* title;
 };
 
