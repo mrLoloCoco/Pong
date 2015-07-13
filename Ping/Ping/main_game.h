@@ -15,6 +15,7 @@
 #pragma once
 
 #include "game_state.h"
+#include "entity.h"
 
 
 class main_game : public tiny_state
@@ -26,4 +27,5 @@ public:
     void Destroy(sf::RenderWindow* window);
     
 private:
+    Entity* paddle;
 };

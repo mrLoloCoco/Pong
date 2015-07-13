@@ -12,6 +12,9 @@
 		5CDCF5851B4FD825005E4829 /* agata.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5841B4FD825005E4829 /* agata.regular.ttf */; };
 		5CDCF5881B4FD8D3005E4829 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */; };
 		5CDCF58B1B544F31005E4829 /* main_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF58A1B544F31005E4829 /* main_game.cpp */; };
+		5CDCF5951B545595005E4829 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5921B545595005E4829 /* ball.png */; };
+		5CDCF5961B545595005E4829 /* paddle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5931B545595005E4829 /* paddle1.png */; };
+		5CDCF5971B545595005E4829 /* paddle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5941B545595005E4829 /* paddle2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		5CDCF5891B544776005E4829 /* main_game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main_game.h; sourceTree = "<group>"; };
 		5CDCF58A1B544F31005E4829 /* main_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_game.cpp; sourceTree = "<group>"; };
+		5CDCF5901B545435005E4829 /* entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
+		5CDCF5921B545595005E4829 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		5CDCF5931B545595005E4829 /* paddle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle1.png; sourceTree = "<group>"; };
+		5CDCF5941B545595005E4829 /* paddle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 		5C7859F31B4F33E900382C30 /* Ping */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF5911B54557A005E4829 /* Graphics */,
 				5C7859F91B4F33E900382C30 /* main.cpp */,
 				5CDCF58F1B54511E005E4829 /* Source Files */,
 				5CDCF58E1B5450F6005E4829 /* Header Files */,
@@ -80,7 +88,9 @@
 		5C7859FB1B4F33E900382C30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5CDCF5841B4FD825005E4829 /* agata.regular.ttf */,
+				5CDCF5921B545595005E4829 /* ball.png */,
+				5CDCF5931B545595005E4829 /* paddle1.png */,
+				5CDCF5941B545595005E4829 /* paddle2.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				5CDCF57C1B4F3ABB005E4829 /* game_state.h */,
+				5CDCF5901B545435005E4829 /* entity.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -118,6 +129,22 @@
 				5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */,
 			);
 			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5CDCF5911B54557A005E4829 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF5981B545641005E4829 /* Sprites */,
+				5CDCF5841B4FD825005E4829 /* agata.regular.ttf */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		5CDCF5981B545641005E4829 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDCF5951B545595005E4829 /* ball.png in Resources */,
 				5CDCF5851B4FD825005E4829 /* agata.regular.ttf in Resources */,
+				5CDCF5971B545595005E4829 /* paddle2.png in Resources */,
+				5CDCF5961B545595005E4829 /* paddle1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

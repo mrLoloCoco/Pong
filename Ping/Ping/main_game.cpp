@@ -15,6 +15,8 @@
 
 void main_game::Initiaize(sf::RenderWindow* window)
 {
+    this->paddle = new Entity();
+    this->paddle->Load("paddle1.png");
 }
 void main_game::Update(sf::RenderWindow* window)
 {
@@ -25,9 +27,11 @@ void main_game::Update(sf::RenderWindow* window)
 }
 void main_game::Render(sf::RenderWindow* window)
 {
+    window->draw(*this->paddle);
 }
 void main_game::Destroy(sf::RenderWindow* window)
 {
+    delete this->paddle;
 }
 
 
