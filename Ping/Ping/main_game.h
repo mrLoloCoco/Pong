@@ -1,16 +1,23 @@
 //
-//  test_state.h
+//  main_game.h
 //  Ping
 //
-//  Created by Loren Colcol on 7/10/15.
+//  Created by Loren Colcol on 7/13/15.
 //  Copyright (c) 2015 Loren Colcol. All rights reserved.
 //
+
+#ifndef Ping_main_game_h
+#define Ping_main_game_h
+
+
+#endif
 
 #pragma once
 
 #include "game_state.h"
 
-class main_menu : public tiny_state
+
+class main_game : public tiny_state
 {
 public:
     void Initiaize(sf::RenderWindow* window);
@@ -28,4 +35,3 @@ private:
     
     bool upKey, downKey;
 };
-

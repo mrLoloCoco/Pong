@@ -2,6 +2,7 @@
 #include "main_menu.h"
 
 game_state coreState;
+bool quitGame = false;
 
 #include <iostream>
 #include "ResourcePath.hpp"
@@ -33,6 +34,10 @@ int main()
         coreState.Render();
         
         window.display();
+        
+        if (quitGame) {
+            window.close();
+        }
     }
     
     return 0;
