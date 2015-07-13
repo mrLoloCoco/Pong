@@ -58,14 +58,11 @@
 		5C7859F31B4F33E900382C30 /* Ping */ = {
 			isa = PBXGroup;
 			children = (
+				5C7859F91B4F33E900382C30 /* main.cpp */,
+				5CDCF58F1B54511E005E4829 /* Source Files */,
+				5CDCF58E1B5450F6005E4829 /* Header Files */,
 				5CDCF5861B4FD8D3005E4829 /* ResourcePath.hpp */,
 				5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */,
-				5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */,
-				5CDCF57D1B4F3D11005E4829 /* main_menu.h */,
-				5CDCF57C1B4F3ABB005E4829 /* game_state.h */,
-				5C7859F91B4F33E900382C30 /* main.cpp */,
-				5CDCF58A1B544F31005E4829 /* main_game.cpp */,
-				5CDCF5891B544776005E4829 /* main_game.h */,
 				5C7859FB1B4F33E900382C30 /* Resources */,
 				5C7859F41B4F33E900382C30 /* Supporting Files */,
 			);
@@ -86,6 +83,41 @@
 				5CDCF5841B4FD825005E4829 /* agata.regular.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		5CDCF58C1B54508C005E4829 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF57C1B4F3ABB005E4829 /* game_state.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5CDCF58D1B5450A4005E4829 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF57D1B4F3D11005E4829 /* main_menu.h */,
+				5CDCF5891B544776005E4829 /* main_game.h */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		5CDCF58E1B5450F6005E4829 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF58C1B54508C005E4829 /* Core */,
+				5CDCF58D1B5450A4005E4829 /* States */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5CDCF58F1B54511E005E4829 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF58A1B544F31005E4829 /* main_game.cpp */,
+				5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */,
+			);
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
