@@ -33,10 +33,22 @@ public:
         this->setTexture(*this->texture);
     }
     
+    virtual void Update()
+    {
+        this->move(this->velocity);
+    }
+    
+    bool CheckCollision(Entity* entity)
+    {
+        return this->getGlobalBounds().intersects(entity->getGlobalBounds());
+    }
+    
     ~Entity()
     {
         delete this->texture;
     }
+protected:
+    sf::Vector2f velocity;    
 private:
     sf::Texture* texture;
 };

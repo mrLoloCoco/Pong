@@ -1,3 +1,4 @@
+
 #include "game_state.h"
 #include "main_menu.h"
 
@@ -38,6 +39,8 @@ int main()
         if (quitGame) {
             window.close();
         }
+        
+        
     }
     
     return 0;

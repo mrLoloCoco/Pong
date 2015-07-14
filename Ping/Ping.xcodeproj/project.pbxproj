@@ -15,6 +15,9 @@
 		5CDCF5951B545595005E4829 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5921B545595005E4829 /* ball.png */; };
 		5CDCF5961B545595005E4829 /* paddle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5931B545595005E4829 /* paddle1.png */; };
 		5CDCF5971B545595005E4829 /* paddle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5941B545595005E4829 /* paddle2.png */; };
+		5CDCF59E1B5475F2005E4829 /* paddle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF59D1B5475F2005E4829 /* paddle_player.cpp */; };
+		5CDCF5A01B5475FD005E4829 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF59F1B5475FD005E4829 /* ball.cpp */; };
+		5CDCF5A31B547B20005E4829 /* score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF5A21B547B20005E4829 /* score.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,12 @@
 		5CDCF5921B545595005E4829 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		5CDCF5931B545595005E4829 /* paddle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle1.png; sourceTree = "<group>"; };
 		5CDCF5941B545595005E4829 /* paddle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle2.png; sourceTree = "<group>"; };
+		5CDCF59A1B5464E1005E4829 /* paddle_player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddle_player.h; sourceTree = "<group>"; };
+		5CDCF59B1B54757E005E4829 /* ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ball.h; sourceTree = "<group>"; };
+		5CDCF59D1B5475F2005E4829 /* paddle_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = paddle_player.cpp; sourceTree = "<group>"; };
+		5CDCF59F1B5475FD005E4829 /* ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		5CDCF5A11B547AA3005E4829 /* score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = score.h; sourceTree = "<group>"; };
+		5CDCF5A21B547B20005E4829 /* score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = score.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +74,14 @@
 		5C7859F31B4F33E900382C30 /* Ping */ = {
 			isa = PBXGroup;
 			children = (
-				5CDCF5911B54557A005E4829 /* Graphics */,
 				5C7859F91B4F33E900382C30 /* main.cpp */,
-				5CDCF58F1B54511E005E4829 /* Source Files */,
-				5CDCF58E1B5450F6005E4829 /* Header Files */,
 				5CDCF5861B4FD8D3005E4829 /* ResourcePath.hpp */,
 				5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */,
+				5CDCF58E1B5450F6005E4829 /* Header Files */,
+				5CDCF5991B546470005E4829 /* Entities */,
+				5CDCF58F1B54511E005E4829 /* Source Files */,
+				5CDCF5911B54557A005E4829 /* Graphics */,
+				5CDCF5A41B550027005E4829 /* Sounds */,
 				5C7859FB1B4F33E900382C30 /* Resources */,
 				5C7859F41B4F33E900382C30 /* Supporting Files */,
 			);
@@ -88,9 +99,6 @@
 		5C7859FB1B4F33E900382C30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5CDCF5921B545595005E4829 /* ball.png */,
-				5CDCF5931B545595005E4829 /* paddle1.png */,
-				5CDCF5941B545595005E4829 /* paddle2.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -107,8 +115,8 @@
 		5CDCF58D1B5450A4005E4829 /* States */ = {
 			isa = PBXGroup;
 			children = (
-				5CDCF57D1B4F3D11005E4829 /* main_menu.h */,
 				5CDCF5891B544776005E4829 /* main_game.h */,
+				5CDCF57D1B4F3D11005E4829 /* main_menu.h */,
 			);
 			name = States;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		5CDCF58F1B54511E005E4829 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF59C1B5475CF005E4829 /* Entities */,
 				5CDCF58A1B544F31005E4829 /* main_game.cpp */,
 				5CDCF57E1B4F3D2A005E4829 /* main_menu.cpp */,
 			);
@@ -143,8 +152,38 @@
 		5CDCF5981B545641005E4829 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF5921B545595005E4829 /* ball.png */,
+				5CDCF5931B545595005E4829 /* paddle1.png */,
+				5CDCF5941B545595005E4829 /* paddle2.png */,
 			);
 			name = Sprites;
+			sourceTree = "<group>";
+		};
+		5CDCF5991B546470005E4829 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF59A1B5464E1005E4829 /* paddle_player.h */,
+				5CDCF59B1B54757E005E4829 /* ball.h */,
+				5CDCF5A11B547AA3005E4829 /* score.h */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		5CDCF59C1B5475CF005E4829 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5CDCF59D1B5475F2005E4829 /* paddle_player.cpp */,
+				5CDCF59F1B5475FD005E4829 /* ball.cpp */,
+				5CDCF5A21B547B20005E4829 /* score.cpp */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		5CDCF5A41B550027005E4829 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDCF59E1B5475F2005E4829 /* paddle_player.cpp in Sources */,
+				5CDCF5A31B547B20005E4829 /* score.cpp in Sources */,
 				5CDCF58B1B544F31005E4829 /* main_game.cpp in Sources */,
+				5CDCF5A01B5475FD005E4829 /* ball.cpp in Sources */,
 				5CDCF5881B4FD8D3005E4829 /* ResourcePath.mm in Sources */,
 				5C7859FA1B4F33E900382C30 /* main.cpp in Sources */,
 				5CDCF57F1B4F3D2A005E4829 /* main_menu.cpp in Sources */,
