@@ -18,6 +18,7 @@
 		5CDCF59E1B5475F2005E4829 /* paddle_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF59D1B5475F2005E4829 /* paddle_player.cpp */; };
 		5CDCF5A01B5475FD005E4829 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF59F1B5475FD005E4829 /* ball.cpp */; };
 		5CDCF5A31B547B20005E4829 /* score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF5A21B547B20005E4829 /* score.cpp */; };
+		5CDCF5A61B5500A1005E4829 /* bounce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5A51B5500A1005E4829 /* bounce.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5CDCF59F1B5475FD005E4829 /* ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
 		5CDCF5A11B547AA3005E4829 /* score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = score.h; sourceTree = "<group>"; };
 		5CDCF5A21B547B20005E4829 /* score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = score.cpp; sourceTree = "<group>"; };
+		5CDCF5A51B5500A1005E4829 /* bounce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bounce.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		5CDCF5A41B550027005E4829 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				5CDCF5A51B5500A1005E4829 /* bounce.wav */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				5CDCF5851B4FD825005E4829 /* agata.regular.ttf in Resources */,
 				5CDCF5971B545595005E4829 /* paddle2.png in Resources */,
 				5CDCF5961B545595005E4829 /* paddle1.png in Resources */,
+				5CDCF5A61B5500A1005E4829 /* bounce.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

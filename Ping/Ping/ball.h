@@ -14,6 +14,7 @@
 
 #pragma once
 
+#include <SFML/Audio.hpp>
 #include "paddle_player.h"
 #include "score.h"
 
@@ -29,4 +30,7 @@ private:
     Score* score2;
     paddle_player* player1;
     paddle_player* player2;
+    
+    sf::SoundBuffer* buffer;
+    sf::Sound* sound;
 };
