@@ -19,6 +19,7 @@
 		5CDCF5A01B5475FD005E4829 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF59F1B5475FD005E4829 /* ball.cpp */; };
 		5CDCF5A31B547B20005E4829 /* score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF5A21B547B20005E4829 /* score.cpp */; };
 		5CDCF5A61B5500A1005E4829 /* bounce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CDCF5A51B5500A1005E4829 /* bounce.wav */; };
+		5CDCF5A91B550EA5005E4829 /* paddle_ai.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCF5A81B550EA5005E4829 /* paddle_ai.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,9 @@
 		5CDCF5A11B547AA3005E4829 /* score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = score.h; sourceTree = "<group>"; };
 		5CDCF5A21B547B20005E4829 /* score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = score.cpp; sourceTree = "<group>"; };
 		5CDCF5A51B5500A1005E4829 /* bounce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bounce.wav; sourceTree = "<group>"; };
+		5CDCF5A71B550E89005E4829 /* paddle_ai.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddle_ai.h; sourceTree = "<group>"; };
+		5CDCF5A81B550EA5005E4829 /* paddle_ai.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = paddle_ai.cpp; sourceTree = "<group>"; };
+		5CDCF5AA1B5512EF005E4829 /* paddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,6 @@
 				5CDCF5861B4FD8D3005E4829 /* ResourcePath.hpp */,
 				5CDCF5871B4FD8D3005E4829 /* ResourcePath.mm */,
 				5CDCF58E1B5450F6005E4829 /* Header Files */,
-				5CDCF5991B546470005E4829 /* Entities */,
 				5CDCF58F1B54511E005E4829 /* Source Files */,
 				5CDCF5911B54557A005E4829 /* Graphics */,
 				5CDCF5A41B550027005E4829 /* Sounds */,
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				5CDCF58C1B54508C005E4829 /* Core */,
+				5CDCF5991B546470005E4829 /* Entities */,
 				5CDCF58D1B5450A4005E4829 /* States */,
 			);
 			name = "Header Files";
@@ -167,6 +171,8 @@
 				5CDCF59A1B5464E1005E4829 /* paddle_player.h */,
 				5CDCF59B1B54757E005E4829 /* ball.h */,
 				5CDCF5A11B547AA3005E4829 /* score.h */,
+				5CDCF5A71B550E89005E4829 /* paddle_ai.h */,
+				5CDCF5AA1B5512EF005E4829 /* paddle.h */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 				5CDCF59D1B5475F2005E4829 /* paddle_player.cpp */,
 				5CDCF59F1B5475FD005E4829 /* ball.cpp */,
 				5CDCF5A21B547B20005E4829 /* score.cpp */,
+				5CDCF5A81B550EA5005E4829 /* paddle_ai.cpp */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -278,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CDCF59E1B5475F2005E4829 /* paddle_player.cpp in Sources */,
+				5CDCF5A91B550EA5005E4829 /* paddle_ai.cpp in Sources */,
 				5CDCF5A31B547B20005E4829 /* score.cpp in Sources */,
 				5CDCF58B1B544F31005E4829 /* main_game.cpp in Sources */,
 				5CDCF5A01B5475FD005E4829 /* ball.cpp in Sources */,

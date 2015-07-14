@@ -8,7 +8,7 @@
 
 #include "ball.h"
 
-ball::ball(Score* score1, Score* score2, paddle_player* player1, paddle_player* player2)
+ball::ball(Score* score1, Score* score2, paddle* player1, paddle* player2)
 {
     this->Load("ball.png");
     this->score1 = score1;
@@ -50,8 +50,8 @@ void ball::Update(sf::RenderWindow* window)
 
 void ball::Reset(sf::RenderWindow *window)
 {
-    this->velocity.x = 0.65f;
-    this->velocity.y = 0.65f;
+    this->velocity.x = 3.0f;
+    this->velocity.y = 3.0f;
     this->setPosition(window->getSize().x / 2, window->getSize().y / 2);
     this->player1->setPosition(0, window->getSize().y / 2 + this->player1->getGlobalBounds().height / 2);
     this->player2->setPosition(window->getSize().x - this->player2->getGlobalBounds().width, window->getSize().y / 2 + this->player2->getGlobalBounds().height / 2);

@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Loren Colcol. All rights reserved.
 //
 
-#include <stdio.h>
 #include "main_game.h"
 #include "main_menu.h"
 
@@ -23,8 +22,9 @@ void main_game::Initiaize(sf::RenderWindow* window)
     this->score2->setPosition(window->getSize().x - this->score2->getGlobalBounds().width, 0);
     
     this->player1 = new paddle_player(0);
-    this->player2 = new paddle_player(1);
+    this->player2 = new paddle_ai(1);
     this->ballObject = new ball(this->score1, this->score2, this->player1, this->player2);
+    this->player2->SetBall(this->ballObject);
 
     this->ballObject->Reset(window);
 }

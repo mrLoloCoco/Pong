@@ -1,16 +1,17 @@
 //
-//  paddle_player.cpp
+//  paddle_ai.cpp
 //  Ping
 //
 //  Created by Loren Colcol on 7/14/15.
 //  Copyright (c) 2015 Loren Colcol. All rights reserved.
 //
 
-#include "paddle_player.h"
+#include "paddle_ai.h"
 
-paddle_player::paddle_player(int playerNumber)
+paddle_ai::paddle_ai(int playerNumber)
 {
     this->playerNumber = playerNumber;
+    
     switch (this->playerNumber) {
         case 0:
             this->Load("paddle1.png");
@@ -21,17 +22,25 @@ paddle_player::paddle_player(int playerNumber)
     }
 }
 
-void paddle_player::Update()
+void paddle_ai::SetBall(ball* ballObject)
 {
-    switch (this->playerNumber)
+    this->ballObject = ballObject;
+}
+
+void paddle_ai::Update()
+{
+    if (this->ballObject != NULL)
     {
-        case 0:
-            this->velocity.y = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S) - sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W);
-            break;
-        default:
-            this->velocity.y = sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down) - sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up);
-            break;
+        if (this->getPosition().y + this->getGlobalBounds().height / 2 < this->ballObject->getPosition().y)
+        {
+            this->move(0, 1);
+        }
+        if (this->getPosition().y + this->getGlobalBounds().height / 2 > this->ballObject->getPosition().y)
+        {
+            this->move(0, -1);
+        }
     }
+    
     Entity::Update();
     
     if (this->getPosition().y < 0)
