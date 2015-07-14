@@ -16,6 +16,8 @@
 
 #include "entity.h"
 
+#define PADDLE_SPEED 5
+
 class paddle : public Entity
 {
 public:

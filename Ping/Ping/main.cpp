@@ -17,6 +17,9 @@ int main()
     coreState.SetWindow(&window);
     coreState.SetState(new main_menu());
     
+    sf::Clock timer;
+    sf::Time elapsed;
+    
     // run the program as long as the window is open
     while (window.isOpen())
     {
@@ -29,18 +32,23 @@ int main()
                 window.close();
         }
         
-        window.clear(sf::Color::Black);
+        elapsed = timer.getElapsedTime();
         
-        coreState.Update();
-        coreState.Render();
-        
-        window.display();
-        
-        if (quitGame) {
-            window.close();
+        if (elapsed.asMicroseconds() > 162)
+        {
+            window.clear(sf::Color::Black);
+            
+            coreState.Update();
+            coreState.Render();
+            
+            window.display();
+            
+            if (quitGame)
+            {
+                window.close();
+            }
+            timer.restart();
         }
-        
-        
     }
     
     return 0;

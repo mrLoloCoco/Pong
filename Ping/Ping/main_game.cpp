@@ -36,7 +36,6 @@ void main_game::Update(sf::RenderWindow* window)
     this->score1->Update();
     this->score2->Update();
 
-
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
     {
         coreState.SetState(new main_menu());
@@ -59,6 +58,8 @@ void main_game::Destroy(sf::RenderWindow* window)
     delete this->ballObject;
     delete this->score1;
     delete this->score2;
+    
+    delete this->font;
 }
 
 
