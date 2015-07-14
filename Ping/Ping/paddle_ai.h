@@ -27,5 +27,5 @@ public:
 private:
     ball* ballObject;
     int playerNumber;
-    
+    float speed;
 };

@@ -11,6 +11,7 @@
 paddle_ai::paddle_ai(int playerNumber)
 {
     this->playerNumber = playerNumber;
+    this->speed = 2.0f;
     
     switch (this->playerNumber) {
         case 0:
@@ -33,11 +34,11 @@ void paddle_ai::Update()
     {
         if (this->getPosition().y + this->getGlobalBounds().height / 2 < this->ballObject->getPosition().y)
         {
-            this->move(0, 1);
+            this->move(0, this->speed);
         }
         if (this->getPosition().y + this->getGlobalBounds().height / 2 > this->ballObject->getPosition().y)
         {
-            this->move(0, -1);
+            this->move(0, -this->speed);
         }
     }
     
