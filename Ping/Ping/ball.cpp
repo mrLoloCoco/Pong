@@ -15,6 +15,8 @@ ball::ball(Score* score1, Score* score2, paddle* player1, paddle* player2)
     this->score2 = score2;
     this->player1 = player1;
     this->player2 = player2;
+    this->velocity.y = .65f;
+
     
     this->buffer = new sf::SoundBuffer();
     this->buffer->loadFromFile(resourcePath() + "bounce.wav");
@@ -51,9 +53,14 @@ void ball::Update(sf::RenderWindow* window)
 void ball::Reset(sf::RenderWindow *window)
 {
     this->velocity.x = .65f;
-    this->velocity.y = .65f;
     this->setPosition(window->getSize().x / 2, window->getSize().y / 2);
     this->player1->setPosition(0, window->getSize().y / 2 + this->player1->getGlobalBounds().height / 2);
     this->player2->setPosition(window->getSize().x - this->player2->getGlobalBounds().width, window->getSize().y / 2 + this->player2->getGlobalBounds().height / 2);
 
+}
+
+ball::~ball()
+{
+    delete this->sound;
+    delete this->buffer;
 }

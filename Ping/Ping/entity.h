@@ -22,6 +22,8 @@
 class Entity : public sf::Sprite
 {
 public:
+    sf::Vector2f velocity;
+
     Entity()
     {
         this->texture = new sf::Texture();
@@ -47,8 +49,6 @@ public:
     {
         delete this->texture;
     }
-protected:
-    sf::Vector2f velocity;    
 private:
     sf::Texture* texture;
 };
