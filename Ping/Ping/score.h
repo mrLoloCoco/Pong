@@ -22,6 +22,8 @@ public:
     Score(sf::Font &font, unsigned int size);
     void IncrementScore();
     void Update();
-private:
     int value;
+    void Reset();
+private:
+   
 };

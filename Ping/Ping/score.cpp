@@ -18,6 +18,11 @@ void Score::IncrementScore()
     this->value += 1;
 }
 
+void Score::Reset()
+{
+    this->value = 0;
+}
+
 void Score::Update()
 {
     this->setString("Score: " + std::to_string(this->value));

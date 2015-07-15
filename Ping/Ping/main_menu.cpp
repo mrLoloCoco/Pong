@@ -30,6 +30,10 @@ void main_menu::Initiaize(sf::RenderWindow* window)
     this->quit = new sf::Text("Quit", *this->font, 42U);
     this->quit->setOrigin(this->quit->getGlobalBounds().width /2, this->play->getGlobalBounds().height /2.5);
     this->quit->setPosition(window->getSize().x /2, window->getSize().y /1.5 + 75 );
+    
+    this->instructions = new sf::Text("Use Arrow Keys / Enter to select Menu Option, W & S to move paddle, esc to Exit" , *this->font, 21U);
+    this->instructions->setOrigin(this->instructions->getGlobalBounds().width /2, this->play->getGlobalBounds().height /2.5);
+    this->instructions->setPosition(window->getSize().x /2, window->getSize().y /1.5 + 150 );
 }
 void main_menu::Update(sf::RenderWindow* window)
 {
@@ -81,7 +85,8 @@ void main_menu::Render(sf::RenderWindow* window)
     window->draw(*this->title);
     window->draw(*this->play);
     window->draw(*this->quit);
-
+    window->draw(*this->instructions);
+    
 }
 void main_menu::Destroy(sf::RenderWindow* window)
 {
@@ -89,5 +94,6 @@ void main_menu::Destroy(sf::RenderWindow* window)
     delete this->title;
     delete this->play;
     delete this->quit;
+    delete this->instructions;
 
 }

@@ -11,7 +11,7 @@
 paddle_ai::paddle_ai(int playerNumber)
 {
     this->playerNumber = playerNumber;
-    this->speed = 5.0f;
+    this->speed = 1.5f;
     
     switch (this->playerNumber) {
         case 0:

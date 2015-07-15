@@ -35,6 +35,9 @@ void main_game::Update(sf::RenderWindow* window)
     this->player2->Update();
     this->score1->Update();
     this->score2->Update();
+    
+  
+
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
     {

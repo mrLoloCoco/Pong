@@ -16,7 +16,7 @@
 
 #include "entity.h"
 
-#define PADDLE_SPEED 5
+#define PADDLE_SPEED 2
 
 class paddle : public Entity
 {

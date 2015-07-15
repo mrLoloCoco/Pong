@@ -189,6 +189,12 @@ void ball::Update(sf::RenderWindow* window)
         this->score1->IncrementScore();
         this->Reset(window);
     }
+    
+    if (this->score1->value == 5 || this->score2->value == 5)
+    {
+        this->score1->Reset();
+        this->score2->Reset();
+    }
     Entity::Update();
 }
 

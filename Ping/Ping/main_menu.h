@@ -23,6 +23,7 @@ private:
     sf::Text* title;
     sf::Text* play;
     sf::Text* quit;
+    sf::Text* instructions;
     
     int selected;
     

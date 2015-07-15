@@ -18,7 +18,7 @@
 #include "paddle_player.h"
 #include "score.h"
 
-#define BALL_SPEED 4
+#define BALL_SPEED 1
 #define BALL_MAX_SPEED (BALL_SPEED * 2)
 
 
