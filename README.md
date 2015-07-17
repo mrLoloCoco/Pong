@@ -13,7 +13,3 @@ Instructions:
 - first player to 5 points wins, then game automatically restarts
 - game has sounds for ball collision and leaving the arena
 
-Resources include: 
-    - http://www.gamefromscratch.com/page/Game-From-Scratch-CPP-Edition.aspx
-    - SFML Library
-    - https://www.youtube.com/watch?v=n1h5uqsFe80

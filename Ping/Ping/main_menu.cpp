@@ -27,7 +27,7 @@ void main_menu::Initiaize(sf::RenderWindow* window)
     this->play->setOrigin(this->play->getGlobalBounds().width /2, this->play->getGlobalBounds().height /2.5);
     this->play->setPosition(window->getSize().x /2, window->getSize().y /1.5);
     
-    this->quit = new sf::Text("Quit", *this->font, 42U);
+    this->quit = new sf::Text("Exit", *this->font, 42U);
     this->quit->setOrigin(this->quit->getGlobalBounds().width /2, this->play->getGlobalBounds().height /2.5);
     this->quit->setPosition(window->getSize().x /2, window->getSize().y /1.5 + 75 );
     
@@ -75,10 +75,10 @@ void main_menu::Render(sf::RenderWindow* window)
     switch (this->selected)
     {
         case 0:
-            this->play->setColor(sf::Color::Green);
+            this->play->setColor(sf::Color::Cyan);
             break;
         case 1:
-            this->quit->setColor(sf::Color::Green);
+            this->quit->setColor(sf::Color::Cyan);
             break;
      
     }
