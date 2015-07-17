@@ -1,5 +1,5 @@
 # Pong
-Pong Game assignment for CS 170
+Pong Game assignment for CMPM 170
 
 Controls: 
 - Up Key, Down Key: Scroll Menu options
